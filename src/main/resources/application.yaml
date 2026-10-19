@@ -1,0 +1,10 @@
+server:
+  port: 8080
+
+app:
+  auth:
+    user-file: ./data/users.txt
+    min-password-length: 8
+    username-pattern: '^[\p{IsHan}a-zA-Z0-9_]{1,20}$'
+    max-password-length: 10
+    userpassword-pattern: '^[a-zA-Z0-9_@]{1,20}$'
